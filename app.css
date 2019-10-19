@@ -1,0 +1,10 @@
+.container {
+	max-width: 40em;
+}
+#editor {
+	height: 40em;
+}
+textarea.codeflask__textarea, code {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
