@@ -1,10 +1,21 @@
 .container {
 	max-width: 40em;
 }
-#editor {
-	height: 40em;
+.CodeMirror {
+  height: auto;
 }
-textarea.codeflask__textarea, code {
-	white-space: pre-wrap;
-	word-wrap: break-word;
+.cm-s-fad.CodeMirror {
+	color: rgba(0, 0, 0, 0.87);
+	font-family: "Noto Serif", Serif;
+}
+.cm-s-fad span.cm-comment {
+	font-family: Roboto, Sans;
+	opacity: 0.7;
+}
+.cm-s-fad span.cm-variable {
+	font-style: italic;
+}
+.cm-s-fad span.cm-number {
+	vertical-align: sub;
+	font-size: 0.7em;
 }
