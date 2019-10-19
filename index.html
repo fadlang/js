@@ -1,42 +1,75 @@
-# Это комментарий
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-# A fun1 B. Аргументы (входные и выходные) функции могут стоять с любой стороны от названия.
-#  Аргументы начинаются с заглавной буквы, все остальное название функции. Название может состоять из нескольких слов.  A fun other B
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.js"></script>
+    <title>߷&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fad editor </title>
+  </head>
+  <body>
+    <div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <textarea id="source">
+Это комментарий. Любая строка, которая не начинаеться с 3 пробелов — комментарий.
 
-# Определяем функцию «= 0», это название из двух слов (равно нулю). Один параметр (Z) и нет тела
-Z = 0
+Аргументы (входные и выходные) функции могут стоять с любой стороны от названия. A fun1 B. Аргументы начинаются с заглавной буквы, все остальное название функции. Название может состоять из нескольких слов. A fun other B
 
-# Определяем функцию «натуральное число», и указываем, что ноль — натуральное. Разделяем вызовы запятыми
-Z is natural, Z = 0
+Определяем функцию «= 0», это название из двух слов (равно нулю). Один параметр (Z) и нет тела:
+   Z = 0
 
-# Cледующее число « + 1 =», и указываем, что следующее за любым натуральным — натуральное
-N2 is natural, N + 1 = N2, N2 is natural
+Определяем функцию «натуральное число», и указываем, что ноль — натуральное. Разделяем вызовы запятыми
+   Z is natural, Z = 0
 
-# Функции =1, =2, =3
-N = 1, P = 0, P + 1 = N
-N = 2, P = 1, P + 1 = N
-N = 3, P = 2, P + 1 = N
+Определяем функцию cледующее число « + 1 =», и указываем, что следующее за любым натуральным — натуральное
+   N is natural, N + 1 = N2, N2 is natural
 
-# Индуктивное определение оператора больше или равно. Любое число, больше или равно 0.
-N >= Z, Z = 0
+Функции = 1, = 2, = 3
+   N = 1, P = 0, P + 1 = N
+   N = 2, P = 1, P + 1 = N
+   N = 3, P = 2, P + 1 = N
 
-#  Если одно число больше или равно другого, то и Следующие за ними числа больше или равны
-N >= M, N2 + 1 = N, M2 + 1 = M, N2 >= M2
-# Идея в том, что если тебе надо сравнить 5 и 2, ты знаешь, что результат точно такой же как и для 4 и 1, 3 и 0. А последний ты из первого определения берешь
+Индуктивное определение оператора больше или равно. Любое число, больше или равно 0.
+   N >= Z, Z = 0
 
-# Сложение, аналогично с >=. Любое число + 0 равно самому себе
-N + Z = N, Z = 0
-# (n + 1) + m = (n + m) + 1
-N + M = K, N2 + 1 = N, K2 + 1 = K, N2 + M = K
+Если одно число больше или равно другого, то и Следующие за ними числа больше или равны
+   N >= M, N2 + 1 = N, M2 + 1 = M, N2 >= M2
 
-# Числа фибоначчи
-fibonacci Z = Z, Z = 0
-fibonacci N = N, N = 1
+Идея в том, что если тебе надо сравнить 5 и 2, ты знаешь, что результат точно такой же как и для 4 и 1, 3 и 0. А последний ты из первого определения берешь
 
-fibonacci N = F, N >= 2, F1 + F2 = F, fibonacci N1 = F1,
-N1 + 1 = N, fibonacci N2 = F2, N2 + 1 = N1
+Сложение, аналогично с >=. Любое число + 0 равно самому себе
+   N + Z = N, Z = 0
+(n + 1) + m = (n + m) + 1
+   N + M = K, N2 + 1 = N, K2 + 1 = K, N2 + M = K2
 
-# Ключевое слово ? - вернуть значение 
-fibonacci N = ?, N = 3
-# Должно вернуть 3 число Фибоначии
-# > (? = 2)
+Числа фибоначчи
+   fibonacci Z = Z, Z = 0
+   fibonacci N = N, N = 1
+
+   fibonacci N = F, N >= 2, F1 + F2 = F, fibonacci N1 = F1, N1 + 1 = N, fibonacci N2 = F2, N2 + 1 = N1
+
+Ключевое слово ? - вернуть значение 
+   fibonacci N = ?, N = 3
+
+Должно вернуть 3 число Фибоначии
+> (? = 2)
+                </textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
