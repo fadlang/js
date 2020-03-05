@@ -7,30 +7,29 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.0/codemirror.min.css" integrity="sha256-vZ3SaLOjnKO/gGvcUWegySoDU6ff33CS5i9ot8J9Czk=" crossorigin="anonymous" />
     <link rel="stylesheet" href="app.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.0/codemirror.min.js" integrity="sha256-C1kVf8tUtnM4eBSZM0mE7kcDrTYuVGxACdyYvhMEeRo=" crossorigin="anonymous"></script>
     <title>߷&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fad editor </title>
   </head>
   <body>
+
+    <nav class="navbar fixed-top container navbar-light bg-light">
+      <span class="navbar-brand" href="#" width="5em">߷&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fad editor</span>
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Run</button>
+    </nav>
     <div class="container">
     <div class="row">
-        <div class="col-sm">
+        <div class="col-sm col-main">
             <textarea id="source">
 Это комментарий. Любая строка, которая не начинаеться с 3 пробелов — комментарий.
 
 Аргументы (входные и выходные) функции могут стоять с любой стороны от названия. A fun1 B. Аргументы начинаются с заглавной буквы, все остальное название функции. Название может состоять из нескольких слов. A fun other B
 
-Определяем функцию «= 0», это название из двух слов (равно нулю). Один параметр (Z) и нет тела:
+Определяем функцию «= 0», это название из двух слов (равно нулю).
    Z = 0
 
-Определяем функцию «натуральное число», и указываем, что ноль — натуральное. Разделяем вызовы запятыми
-   Z is natural, Z = 0
-
-Определяем функцию cледующее число « + 1 =», и указываем, что следующее за любым натуральным — натуральное
-   N is natural, N + 1 = N2, N2 is natural
-
-Функции = 1, = 2, = 3
+Определяем функцию cледующее число « + 1 =» и Функции = 1, = 2, = 3
    N = 1, P = 0, P + 1 = N
    N = 2, P = 1, P + 1 = N
    N = 3, P = 2, P + 1 = N
@@ -39,26 +38,23 @@
    N >= Z, Z = 0
 
 Если одно число больше или равно другого, то и Следующие за ними числа больше или равны
-   N >= M, N2 + 1 = N, M2 + 1 = M, N2 >= M2
+   N >= M, N_-1 + 1 = N, M_-1 + 1 = M, N_-1 >= M_-1
 
 Идея в том, что если тебе надо сравнить 5 и 2, ты знаешь, что результат точно такой же как и для 4 и 1, 3 и 0. А последний ты из первого определения берешь
 
 Сложение, аналогично с >=. Любое число + 0 равно самому себе
    N + Z = N, Z = 0
 (n + 1) + m = (n + m) + 1
-   N + M = K, N2 + 1 = N, K2 + 1 = K, N2 + M = K2
+   N + M = K, N_-1 + 1 = N, K_-1 + 1 = K, N_-1 + M = K_-1
 
 Числа фибоначчи
    fibonacci Z = Z, Z = 0
    fibonacci N = N, N = 1
 
-   fibonacci N = F, N >= 2, F1 + F2 = F, fibonacci N1 = F1, N1 + 1 = N, fibonacci N2 = F2, N2 + 1 = N1
+   fibonacci N = F, N >= 2, F_-1 + F_-2 = F, fibonacci N_-1 = F_-1, N_-1 + 1 = N, fibonacci N_-2 = F_-2, N_-2 + 1 = N_-1
 
-Ключевое слово ? - вернуть значение 
-   fibonacci N = ?, N = 3
-
-Должно вернуть 3 число Фибоначии
-> (? = 2)
+Ключевое слово ? - вернуть значение (Должно вернуть 3 число Фибоначии)
+   fibonacci N = ?F_3, N = 3
                 </textarea>
             </div>
         </div>

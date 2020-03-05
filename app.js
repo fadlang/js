@@ -1,41 +1,46 @@
 CodeMirror.defineMode("fad", function() {
 
   return {
-  	startState: function(){
-	  	return {
-	  		inVar: false,
-	  	};
-	},
+    startState: function(){
+      return {
+        inNumber: false,
+      };
+    },
     token: function(stream, state) {
       if (stream.sol()) {
-      	if (stream.string.substring(0, 3) != '   ') {
-      		stream.skipToEnd();
-      		return 'comment';
-      	}
+        if (stream.string.substring(0, 3) != '   ') {
+          stream.skipToEnd();
+          return 'comment';
+        }
       }
       stream.eatSpace();
       
       l = stream.next();
-      // digits or index
-      if (/\d/.test(l) && state.inVar) {
-      	stream.match(/\d/);
-      	state.inVar = false;
-      	return 'number'
+
+      if (state.inNumber) {
+        state.inNumber = false;
+        stream.eatWhile(/[^\s\,]/);
+        return 'number';
       };
 
-      if (stream.eol() || (l == ',') || (l.toLowerCase() == l)) {
-      	state.inVar = false;
-      	return
-      }
-      state.inVar = true;
-      stream.match(/^\s\d\,/)
-      return 'variable';
-    }
+      //  index
+      if (l == '_') {
+        n = stream.peek();
+        if ((!n) || (n.match(/[\s\,]/))) {
+          return ;
+        }
+
+        state.inNumber = true;
+        return 'under';
+      };
+
+
+    },
   };
 });
 
 var editor = new CodeMirror.fromTextArea(
-	document.getElementById('source'), {
+  document.getElementById('source'), {
     lineNumbers: true,
     lineWrapping: true,
     mode: "fad",

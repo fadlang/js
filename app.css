@@ -1,21 +1,27 @@
 .container {
-	max-width: 40em;
+  max-width: 40em;
+}
+.col-main {
+  padding-top: 50px;
 }
 .CodeMirror {
   height: auto;
 }
 .cm-s-fad.CodeMirror {
-	color: rgba(0, 0, 0, 0.87);
-	font-family: "Noto Serif", Serif;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Noto Serif", Serif;
 }
 .cm-s-fad span.cm-comment {
-	font-family: Roboto, Sans;
-	opacity: 0.7;
+  font-family: Roboto, Sans;
+  opacity: 0.7;
 }
 .cm-s-fad span.cm-variable {
-	font-style: italic;
+  font-style: italic;
 }
 .cm-s-fad span.cm-number {
-	vertical-align: sub;
-	font-size: 0.7em;
+  vertical-align: sub;
+  font-size: 0.7em;
+}
+.cm-s-fad span.cm-under {
+  display: none;
 }
