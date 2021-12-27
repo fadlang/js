@@ -5,7 +5,20 @@ Language for solving algorithmic problems.
 ## Sample
 
 ```
-TODO
+Definition of numbers 0 .. 5
+    N = 1, Z ++ = N, Z = 0
+    N = 2, P ++ = N, P = 1
+    N = 3, P ++ = N, P = 2
+    N = 4, P ++ = N, P = 3
+    N = 5, P ++ = N, P = 4
+
+Definition of addition
+    A + Z = 0, Z = 0
+    A + B = C, A_+1 + B = C_+1, A ++ = A_+1, C ++ = C_+1
+
+Find solution 2 + x = 5
+
+    A + ? = B, A = 2, B = 5
 ```
 
 ## Milestones
