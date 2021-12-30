@@ -14,7 +14,7 @@ Definition of numbers 0 .. 5
 
 Definition of addition
     A + Z = 0, Z = 0
-    A + B = C, A_+1 + B = C_+1, A ++ = A_+1, C ++ = C_+1
+    A + B = C, A_2 + B = C_2, A ++ = A_2, C ++ = C_2
 
 Find solution 2 + x = 5
 
