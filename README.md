@@ -26,6 +26,7 @@ Find solution 2 + x = 5
 
 | Version | Milestone |
 | ------- | ------------- |
+| 0.0.5   | Simple request `x = 3` |
 | 0.1     | Solve linear equations `2 + x = 5` |
 | 0.3     | Sort lists `5, 1, 3` |
 | 0.5     | C transpiler |
